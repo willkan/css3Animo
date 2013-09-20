@@ -33,6 +33,6 @@ CSS动画的类名.
 相同namespace下若有动画在进行,则将该namespace下所有动画按定义顺序依次停止(此时为元素类型为之前设定的`finalClass`或`origin + '' + finalClass`),然后执行该次定义的动画.
 
 ###callback (function)
-
+回调中第一个参数为动画元素自身
 
 
