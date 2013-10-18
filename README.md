@@ -2,7 +2,7 @@
 
 ---
 
-// description
+CSS3动画助手,提供方便的api管理CSS3动画及其回调
 
 ---
 
