@@ -23,8 +23,9 @@ define(function(require){
             var $animateTarget = $(this),
                 animateClass = options.animateClass || '',
                 finalClass = options.finalClass || '',
-                originClass = options.originClass ||
-                    $animateTarget.data('originClass') ||
+                originClass = Object.prototype.toString.call(options.originClass) == '[object String]' ?
+                    options.originClass : Object.prototype.toString.call($animateTarget.data('originClass')) == '[object String]' ?
+                    $animateTarget.data('originClass') :
                     ($animateTarget.data('originClass', $animateTarget.attr('class')).attr('class')),
                 namespace = options.namespace || false,
                 queue, item;

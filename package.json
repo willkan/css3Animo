@@ -1,13 +1,13 @@
 {
   "family": "willkan",
   "name": "css3Animo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a helper for css3 animation depends on jquery or zepto",
-  "homepage": "https://github.com/willkan/css3AnimationHelper",
+  "homepage": "https://github.com/willkan/css3Animo",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/willkan/css3AnimationHelper.git"
+    "url": "git://github.com/willkan/css3Animo.git"
   },
   "bugs": {
     "url": ""

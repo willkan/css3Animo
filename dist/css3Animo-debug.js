@@ -1,4 +1,4 @@
-define("willkan/css3Animo/1.0.0/css3Animo-debug", [ "$-debug", "modernizr-debug" ], function(require) {
+define("willkan/css3Animo/1.0.1/css3Animo-debug", [ "$-debug", "modernizr-debug" ], function(require) {
     var $ = require("$-debug"), Modernizr = window.Modernizr || require("modernizr-debug");
     var namespaces = {}, animEndEventNames = {
         WebkitAnimation: "webkitAnimationEnd",
@@ -16,7 +16,7 @@ define("willkan/css3Animo/1.0.0/css3Animo-debug", [ "$-debug", "modernizr-debug"
      */
     $.extend($.fn, {
         css3Animo: function(options, callback) {
-            var $animateTarget = $(this), animateClass = options.animateClass || "", finalClass = options.finalClass || "", originClass = options.originClass || $animateTarget.data("originClass") || $animateTarget.data("originClass", $animateTarget.attr("class")).attr("class"), namespace = options.namespace || false, queue, item;
+            var $animateTarget = $(this), animateClass = options.animateClass || "", finalClass = options.finalClass || "", originClass = Object.prototype.toString.call(options.originClass) == "[object String]" ? options.originClass : Object.prototype.toString.call($animateTarget.data("originClass")) == "[object String]" ? $animateTarget.data("originClass") : $animateTarget.data("originClass", $animateTarget.attr("class")).attr("class"), namespace = options.namespace || false, queue, item;
             if (namespace) {
                 namespaces[namespace] || (namespaces[namespace] = []);
                 queue = namespaces[namespace];
