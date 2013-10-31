@@ -20,7 +20,8 @@ CSS动画的类名.
 不会写CSS动画?看看<http://daneden.me/animate/>
 
 ####originClass (string)
-初始类名,详细见overwrite解释
+初始类名,options.originClass不是String,则取该元素的data-originClass值,若此值仍不是String,则取该元素的className
+另见overwrite解释
 
 ####finalClass (string)
 最后类名,详细见overwrite解释
