@@ -26,6 +26,7 @@ CSS动画的类名.
 最后类名,详细见overwrite解释
 
 ####overwrite (boolean)
+默认为false
 * 若overwrite为true, 则动画结束时该元素类名为`finalClass`
 * 若overWrite为false, 则动画结束是该元素类名为`originClass + '' + finalClass`
 
